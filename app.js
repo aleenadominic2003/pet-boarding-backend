@@ -86,6 +86,20 @@ app.post("/add",async(request,response)=>{
 })
 
 
+app.post("/view",async(request,response)=>{
+
+
+const pet=await Pet.find()       //to get all course and keep in courses
+
+
+
+
+    response.send(pet)
+
+
+})
+
+
 
 
 
